@@ -20,6 +20,7 @@ body {
   font-family: "Reddit Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  height: 100vh;
 }
 
 .index {
@@ -81,6 +82,43 @@ body {
   @media (width <= 600px) {
     header {
       padding: 1em;
+    }
+  }
+}
+
+.parallax-page {
+  section {
+    background-color: var(--sec-color);
+    color: var(--font-color);
+    text-align: center;
+    height: 6em;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.parallax {
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.image-1 {
+    background-image: url('halloween.png');
+  }
+  &.image-2 {
+    background-image: url('aceattorney.gif');
+  }
+  &.video {
+    padding-bottom: 100vh;
+    video {
+      min-width: 100%;
+      position: fixed;
+      top:0;
+      z-index: -999;
     }
   }
 }
