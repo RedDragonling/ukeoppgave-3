@@ -161,3 +161,15 @@ body {
     }
   }
 }
+
+.media-page {
+  main {
+    .card{
+      .star-rating {
+        img {
+          height: 1em;
+        }
+      }
+    }
+  }
+}
