@@ -5,7 +5,7 @@
   --tert-color: #4A4A4A;
   --font-color: #4A4A4A;
   --font-color-link: #FFCD38;
-  --shadow: #000;
+  --shadow: #00000070;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
@@ -119,6 +119,45 @@ body {
       position: fixed;
       top:0;
       z-index: -999;
+    }
+  }
+}
+
+.card-page {
+  background-color: var(--sec-color);
+  color: var(--font-color);
+  main {
+    display: flex;
+    justify-content: center;
+    .card {
+      background-color: var(--sec-color-alt);
+      box-shadow: 0.5em 0.5em 0.5em var(--shadow);
+      border-radius: 1em;
+      width: 300px;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 3em;
+      transition: 0.1s;
+      &:hover {
+        box-shadow: 1em 1em 1em var(--shadow);
+      }
+      img {
+        border-radius: 1em;
+      }
+      .card-paragraph {
+        margin-top: 0.5em;
+        text-align: center;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 1em;
+        }
+      }
     }
   }
 }
