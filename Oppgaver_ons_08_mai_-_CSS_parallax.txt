@@ -1,0 +1,42 @@
+Da nærmer det seg sakte men sikkert siste dagen med CSS, og vi skal gå gjennom en del små-ting, samt noen som er essensielle når vi skal designe sider som tar seg bra ut på ulike enheter av ulike størrelser - mobiler, klokker(!), TV-skjermer, nettbrett og laptop'er.
+
+Dagens oppgaver blir da:
+
+1) Lag en egen nettside, der dere benytter parallax effekten. Bruk minst 3 bakgrunnsbilder, og 3 ulike "sceneskifter" (i betydning tekst som scroller over bakgrunnsbildene). 
+
+
+Ekstra:
+
+1a) UTFORDRINGER: går det an å legge et .gif-animasjon som bakgrunnsbilde? Slik at det ser ut som en "levende" bakgrunn? Hva med en videofil som bakgrunn? Eksperimenter gjerne med dette.
+
+1b) UTFORDRING 2: Er det mulig å legge et bilde i scroll-delen i stedet for tekst? Slik at en scroller et bilde oppover, over bakgrunnsbildet som skifte mellom de ulike "scenene"? Prøv dette også.
+
+Minimum er én side med ordinær parallax-effekt.
+
+------------------------------------
+
+2) Lag en egen presentasjons-side, hvor du kun lager et kort (Card) med dine personalia. (Type Navn: Adresse: email: et eksempelbilde, kort beskrivelse, samt hva du har lært innen html og CSS). Style det som et typisk visitt-kort, gjerne med ramme rundt, avrundede hjørner, og skyggeeffekt. (og også gjerne en :hover effekt når brukeren holder musen over kortet).
+
+2a) Se om du kan sentrere dette kortet midt på siden. (Hint: flexbox eller grid).
+
+2c) Legg til muligheten for å la brukeren laste ned CV'en din som fil et sted på siden. (filen kan gjerne være tom, men gi den et meningsfyllt navn).
+
+----------------------------------
+
+3) Ta utgangspunkt i de Grid-eksemplene vi hadde forrige leksjon, der vi skulle sette opp grid som lignet på illustrasjonene. Nå skal vi benytte oss av media-queries til å endre layout'en på grid'en etterhvert som størrelsen på nettvinduet endres. 
+
+Oppgave:
+Lag en grid på 3x3 områder. Tanken er å lage en produktside litt lignende nettbutikker som komplett.no eller tilsvarende. I hver "rute" i rutenettet (grid'en) skal det vært et produkt-kort (Card) med produktbilde, varenavn (<h3>), en kort beskrivelse av produktet (<p>) og en linje med 1-5 stjerner som skal illustrere karakterer/tilbakemeldinger andre har gitt for varen. (Litt som "visitt-kortet", men med litt annet innhold nå).
+
+
+Bruk gjerne grid-areas til å sette opp layout'en for siden, og definer spesifikke oppsett for grid-area for hver enkel media-query.
+Du trenger (minst) 3 ulike oppsett: 
+	- vanlig desktop	3 kolonner
+	- nettbrett		2 kolonner
+	- mobil			1 kolonne
+
+Ekstra: Prøv gjerne også å kombinere betingelser for media-query, slik som i eksemplene fra leksjonen. Både max 768 px OG portrait-mode feks..
+
+
+
+-----------------------------------
