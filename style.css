@@ -7,10 +7,19 @@
   --font-color-link: #FFCD38;
   --shadow: #000;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .index {
@@ -22,6 +31,7 @@
     max-width: 60vw;
     min-width: 600px;
     text-align: center;
+    padding: 1em;
     ul {
       margin: 2em auto;
       display: flex;
@@ -38,6 +48,13 @@
             background-color: var(--shadow);
           }
         }
+      }
+    }
+    @media (width <= 600px) {
+      ul {
+        height: 10em;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
