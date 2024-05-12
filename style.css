@@ -60,7 +60,27 @@ body {
   }
 }
 
-header {
-  height: 4em;
-  background-color: red;
+.assignment {
+  header {
+    height: 6em;
+    background-color: var(--tert-color);
+    padding: 1em 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--sec-color-alt);
+    nav {
+      a {
+        padding: 1em;
+        color: var(--font-color);
+        text-decoration: none;
+        background-color: var(--sec-color-alt);
+      }
+    }
+  }
+  @media (width <= 600px) {
+    header {
+      padding: 1em;
+    }
+  }
 }
